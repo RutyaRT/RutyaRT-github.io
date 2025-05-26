@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё резюме</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume-container">
+        <h1>Моё резюме</h1>
+        
+        <img src="C:\Users\User\Desktop\Laba3\image_for_Laba3\Photo.jpg" alt="Моя фотография" class="photo">
+        
+        <h2>Основная информация</h2>
+        <p class="info-text">
+            Имя: <span id="firstName">Николай</span><br>
+            Фамилия: <span id="lastName" class="last-name">Крюков</span>
+        </p>
+        
+        <h2>О себе</h2>
+        <p class="info-text">
+            Студент третьего курса направления 15.03.04 Автоматизация технологических процессов и производств
+        </p>
+        
+        <div class="input-group">
+            <input type="text" id="newLastNameInput" placeholder="Введите новую фамилию">
+            <button onclick="changeLastName()">Изменить фамилию</button>
+        </div>
+        
+        <div class="controls">
+            <button onclick="changeRandomBackground()">Сменить цвет фона</button>
+            <button onclick="askAge()">Указать возраст</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
